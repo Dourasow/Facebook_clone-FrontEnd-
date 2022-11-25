@@ -3,8 +3,10 @@ import Image from 'next/image'
 import {FiThumbsUp} from 'react-icons/fi'
 import {FaRegCommentAlt} from 'react-icons/fa'
 import { RiShareForwardLine } from 'react-icons/ri'
+import Contacts from '../components/Contacts'
 
 const Post = () => {
+    
   return (
     <div className='flex flex-col'>
         <div className='bg-white mt-6 rounded-md p-4'>
@@ -14,7 +16,7 @@ const Post = () => {
                 />
                 <div>
                 <p className='font-medium'>Abdul Sow</p>
-                <p className='text-xs text-gray-500'>{new Date().toLocaleString()}</p>
+                {/* <p className='text-xs text-gray-500'>{Date().toLocaleString()}</p> */}
                 </div>
             </div>
             <p className='py-4'>Lorem Ipsum</p>
@@ -42,8 +44,11 @@ const Post = () => {
                 <RiShareForwardLine className='h-4'/>
                 <p className='text-xs sm:text-base'>Share</p>
             </div>
+           
         </div>
+
     </div>
+    
   )
 }
 
